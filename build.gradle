@@ -1,7 +1,23 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath('org.springframework.boot:spring-boot-gradle-plugin:1.5.5.RELEASE')
+	}
+}
+
+
 apply plugin: 'java'
 //Makes built application runnable
 apply plugin: 'application'
-
+//Generates files used by IntelliJ IDEA to add a set of hooks to generated files
+apply plugin: 'idea'
+//Uses Spring Boot, reduce configuration by using this opinionated plugin
+//Collects jars on classpath and creates a single jar
+//Flags runnable classes
+//Built-in dependency resolver
+apply plugin: 'org.springframework.boot'
 
 mainClassName = 'hello.HelloWorld'
 
@@ -13,7 +29,7 @@ repositories {
 
 /*--jar--*/
 jar {
-	baseName = 'gs-gradle'
+	baseName = 'gs-rest-service'
 	version = '0.1.0'
 }
 
@@ -22,8 +38,10 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-	compile "joda-time:joda-time:2.2"
-	testCompile "junit:junit:4.12"
+	//compile("joda-time:joda-time:2.2")
+	//testCompile ("junit:junit:4.12")
+	compile("org.springframework.boot:spring-boot-starter-web")
+	testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 
