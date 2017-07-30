@@ -21,3 +21,6 @@ Run wrapper script
 
 Build and run app
 `./gradlew run`
+
+Build and run a Spring boot app
+`./gradlew bootRun`

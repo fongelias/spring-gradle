@@ -19,8 +19,6 @@ apply plugin: 'idea'
 //Built-in dependency resolver
 apply plugin: 'org.springframework.boot'
 
-mainClassName = 'hello.HelloWorld'
-
 
 /*--repositories--*/
 repositories {
