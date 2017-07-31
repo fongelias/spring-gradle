@@ -5,36 +5,43 @@ boilerplate for spring-gradle application
 ## Commands
 ### General
 Compile, test, and assemble code into a jar file
-
-`gradle build`
+```
+gradle build
+```
 
 
 See what tasks are available
-
-`gradle tasks`
+```
+gradle tasks
+```
 
 
 ### RabbitMQ
 launch with default settings
-
-`rabbitmq-server`
+```
+rabbitmq-server
+```
 
 
 ### Wrapper
 Generate wrapper script
-
-`gradle wrapper --gradle-version 4.0.1`
+```
+gradle wrapper --gradle-version 4.0.1
+```
 
 
 Run wrapper script
-
-`./gradlew build`
+```
+./gradlew build
+```
 
 
 Build and run app
-
-`./gradlew run`
+```
+./gradlew run
+```
 
 Build and run a Spring boot app
-
-`./gradlew bootRun`
+```
+./gradlew bootRun
+```
