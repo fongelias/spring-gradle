@@ -45,3 +45,32 @@ Build and run a Spring boot app
 ```
 ./gradlew bootRun
 ```
+
+### Vagrant
+Create vagrant file
+```
+vagrant init
+```
+
+Add a box to vagrant, [from this box catalog](https://app.vagrantup.com/boxes/search)
+```
+vagrant box add
+```
+
+Run virtualbox with a vagrantfile
+```
+vagrant up
+```
+
+SSH into vagrant virtual machine
+```
+vagrant ssh
+```
+
+Terminate virtual machine
+```
+vagrant destroy
+```
+
+
+
