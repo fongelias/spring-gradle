@@ -67,6 +67,16 @@ SSH into vagrant virtual machine
 vagrant ssh
 ```
 
+Shutdown virtual machine
+```
+vagrant halt
+```
+
+Reload virtual machine
+```
+vagrant reload
+```
+
 Terminate virtual machine
 ```
 vagrant destroy
